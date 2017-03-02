@@ -1,0 +1,48 @@
+body {
+  font-family: 'Exo', serif;
+  background-image:url();
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p {
+  text-align: center;
+}
+
+div.textbox {
+  margin: 0 auto;
+  width: 600px;
+  border-radius: 25px;
+  padding: 20px;
+  background: #822433;
+}
+
+h1.title {
+  text-align: center;
+  font-size: 300%;
+  font-weight: bold;
+}
+
+.roundimage {
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+}
+
+.unilinks {
+
+}
+
+.copyrights {
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+a.copyrights:link {
+  color: red;
+}
+
+a.copyrights:hover {
+  color: hotpink;
+}
