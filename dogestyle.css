@@ -75,3 +75,7 @@ a.copyrights:link {
 a.copyrights:hover {
   color: hotpink;
 }
+
+logo {
+	align-content: center;
+}
