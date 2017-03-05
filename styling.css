@@ -1,0 +1,55 @@
+body {
+	padding: 0px auto;
+	margin 0px auto;
+}
+
+h1 {
+	text-align: center;
+	font-family: serif;
+}
+
+#header {
+  	width: 100%;
+  	height: 70px;
+  	border: 0px solid black;
+  	padding: -50px auto;
+  	position: fixed;
+  	background-color: white;
+}
+
+#logo {
+ 	position: absolute;
+ 	top: 0px;
+}
+
+.logo_img {
+	align-self: right;
+  	height: 50px;
+}
+
+#message {
+  	position: absolute;
+  	font-style: italic;
+  	bottom: 0px;
+  	right: 0px;
+  	margin: 20px;
+}
+
+.links {
+	text-align: center;
+	font-family: monospace;
+	font-weight: bold; 
+}
+
+.content {
+	margin: 70px 5% 0px 5%;
+	text-align: justify;
+	text-indent: inherit; 
+}
+
+.copyright {
+	text-align: center;
+	text-decoration: underline;
+	font-family: monospace;
+	font-size: small;
+}
