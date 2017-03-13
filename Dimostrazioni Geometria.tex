@@ -1,0 +1,51 @@
+\documentclass[a4paper]{report}
+	
+	\usepackage[italian]{babel}
+	\usepackage[utf8]{inputenc}
+	\usepackage{graphicx}
+	\usepackage{enumitem}
+	\usepackage{amsmath}
+	\usepackage{latexsym}
+	\usepackage{physics}
+	\usepackage{wasysym}
+	\usepackage{geometry}
+	\geometry{a4paper, top=2cm, bottom=2cm, left=2cm, right=2cm, heightrounded}
+	
+	\title{\textbf{Dimostrazioni Interessanti di Geometria}}
+	\author{R.Senese}
+	\date{gennaio 2017}
+	
+	\begin{document}
+		
+		\maketitle
+		%\tableofcontents
+		\chapter{Insiemistica}
+		\section{\textbf{Formula di Grassmann}}
+			\[ dim(V+U) = dim(V) + dim(U) - dim(V \cap U) \] 
+			\emph{Dimostrazione:} sia ${\{w_1, \dotsc w_n\}} $ una base di ${(V \cap U)}$. Possiamo estenderla a una base di ${V=\{w_1, \ldots, w_k, v_{k+1}, \ldots, v_n\}}$ e a una base di ${U= \{ w_1, \ldots, w_k, u_{k+1}, \ldots, u_m\}}$. Verifichiamo che \[\Big\{w_1, \ldots, w_k, v_{k+1}, \ldots, v_n, u_{k+1}, \ldots, u_m\Big\} \] rappresenta una base di ${(V+U)}$.
+			Per dimostrare che è una base dimostriamo che è indipendente e che genera:
+			\begin{itemize}
+			\item \textbf{Indipendenza:} 
+				\[
+				\alpha_1w_1+\ldots+\alpha_kw_k+\beta_{k+1}v_{k+1}+\ldots+\beta_nv_n+\gamma_{k+1}u_{k+1}+\ldots+\gamma_mu_m=0 \quad \Rightarrow
+				\]
+				\begin{equation}\label{eq:indipendenzagrassmann}
+				\Rightarrow \alpha_1w_1+\ldots+\alpha_kw_k+\gamma_{k+1}v_{k+1}+\ldots+\gamma_nv_n=-(\beta_{k+1}u_{k+1}+\ldots+\beta_mu_m)
+				\end{equation}
+				Poiché il primo mebro della equazione \ref{eq:indipendenzagrassmann} ${\in V}$ e il secondo ${\in U}$, allora per il segno di uguaglianza sarà:
+				
+				\[ -(\beta_{k+1}u_{k+1}+\ldots+\beta_mu_m) \in V\cap U \Rightarrow \]
+				\[ \Rightarrow\exists \; t_1w_1+\ldots+t_kw_k=-(\beta_{k+1}u_{k+1}+\ldots+\beta_mu_m)\]
+				ma poiché per ipotesi i vettori erano \emph{linearmente indipendenti} si ha:
+				\[ t_1=\ldots=t_k=\beta_{k+1}=\ldots=\beta_m=0\]
+			\item\textbf{generano:}
+				\begin{equation*}\begin{split}
+				\forall a\in(V+U)\ t.c.\ a=v+u\ per \ qualche \ v\in V e\ u\in U. \ Poich\acute{e}\ v\in \big\langle w_1, \ldots, w_k, v_{k+1} \ldots, v_n \big\rangle \\ e \ u\in\big\langle w_1, \ldots, w_k, u_{k+1}, \ldots, u_m \big\rangle, allora\ anche\ a\in\big\langle w_1, \ldots, w_k, v_{k+1}, \ldots, v_n, u_{k+1}, \ldots, u_m \big\rangle
+				\end{split}\end{equation*}
+			\end{itemize}
+			\begin{flushright}
+			\Square
+			\end{flushright}
+			
+			
+	\end{document}
